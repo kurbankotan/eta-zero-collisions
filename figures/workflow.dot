@@ -1,0 +1,36 @@
+digraph G {
+  graph [rankdir=TB, nodesep=0.3, ranksep=0.34, fontname="Liberation Serif", bgcolor="white", pad=0.12];
+  node  [shape=plain, fontname="Liberation Serif", fontsize=11];
+  edge  [color="#1a1a1a", penwidth=0.9, arrowhead=vee, arrowsize=0.75, fontname="Liberation Serif", fontsize=9.5];
+
+  author [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a">
+    <tr><td bgcolor="#3b3b3b" align="left"><font color="white"><b>Author</b></font></td></tr>
+    <tr><td align="left">problem selection, decisions on scope,<br align="left"/>execution of notebooks in Google Colab<br align="left"/></td></tr></table>>];
+
+  gpt [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a">
+    <tr><td bgcolor="#5b3591" align="left"><font color="white"><b>ChatGPT and Codex (OpenAI)</b></font></td></tr>
+    <tr><td align="left">formulation of the family, mpmath interval code,<br align="left"/>archived certificates (Laguerre, Rouché, <i>a</i><sub>R</sub>), first draft<br align="left"/></td></tr></table>>];
+
+  arch [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a" style="dashed">
+    <tr><td align="left"><b>Archived certificates</b></td></tr>
+    <tr><td align="left">mpmath 1.3.0 interval context, JSON with all interval endpoints<br align="left"/></td></tr></table>>];
+
+  claude [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a">
+    <tr><td bgcolor="#5b3591" align="left"><font color="white"><b>Claude (Anthropic)</b></font></td></tr>
+    <tr><td align="left">review and re-derivation of the analytic bounds, Arb replay,<br align="left"/>left edge <i>a</i><sub>L</sub>, Laguerre certificates for excursions A to G,<br align="left"/>exploratory zero map, reference verification, manuscript expansion<br align="left"/></td></tr></table>>];
+
+  accept [label=<<table border="2" cellborder="0" cellspacing="2" cellpadding="5" color="#9a6a00">
+    <tr><td bgcolor="#9a6a00" align="left"><font color="white"><b>Acceptance criterion</b></font></td></tr>
+    <tr><td align="left">a numerical claim enters the manuscript only if its inequality<br align="left"/>holds in Arb ball arithmetic (and, for archived claims, in the<br align="left"/>mpmath replay checked in exact rational arithmetic)<br align="left"/></td></tr></table>>];
+
+  out [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a">
+    <tr><td bgcolor="#3b3b3b" align="left"><font color="white"><b>Outputs</b></font></td></tr>
+    <tr><td align="left">public repository (code, notebooks, JSON results, figures)<br align="left"/>and manuscript<br align="left"/></td></tr></table>>];
+
+  err [label=<<table border="1" cellborder="0" cellspacing="2" cellpadding="5" color="#1a1a1a" style="dashed">
+    <tr><td align="left"><b><i>Rejected or corrected</i></b></td></tr>
+    <tr><td align="left">citations not confirmed to support the claim;<br align="left"/>spurious defects from finite differences<br align="left"/></td></tr></table>>];
+
+  author -> gpt; gpt -> arch; arch -> claude; author -> claude [style=dashed, label=" decisions "];
+  claude -> accept; accept -> out; accept -> err [style=dashed]; err -> claude [style=dashed, label=" revision "];
+}

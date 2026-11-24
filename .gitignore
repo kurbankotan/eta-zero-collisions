@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# outputs of replay_certificates.py and the original notebook
+/replay.json
+kubik_L_sonuclari.zip
+
+# outputs written to the repository root by eta_edge_zeros_reproduce.ipynb
+/results.json
+/versions.json
+/run_log.txt
+/fig_zero_landscape.png
+/fig_excursions.png
+/executed.ipynb
+eta_edge_zeros_results.zip

@@ -1,0 +1,66 @@
+python-flint 0.9.0 | precision 320 bits
+Laguerre (23/16, 74/5): [-1.74472142811e-20 +/- 5.07e-33] | negative: True
+Rouche r=1e-12: |H(c)|+10r^2 <= 1.001E-23  <  r|H_z(c)| >= 2.997E-22 : True
+Rouche r=1e-19: |H(c)|+10r^2 <= 1.202E-30  <  r|H_z(c)| >= 2.997E-29 : True
+0.1 s
+A: Lambda(23/16, 74/5) in ['-1.7448E-20', '-1.7447E-20']  negative: True
+B: Lambda(1.2525, 12.387) in ['-7.1462E-17', '-7.1461E-17']  negative: True
+C: Lambda(1.5, 16.173) in ['-3.3261E-22', '-3.3260E-22']  negative: True
+D: Lambda(0.1775, 18.504) in ['-8.6786E-25', '-8.6785E-25']  negative: True
+E: Lambda(0.525, 19.124) in ['-3.3210E-26', '-3.3209E-26']  negative: True
+F: Lambda(0.7325, 18.802) in ['-2.2653E-26', '-2.2652E-26']  negative: True
+G: Lambda(1.0345, 20.046) in ['-3.9201E-27', '-3.9200E-27']  negative: True
+0.4 s
+a_R box 1e-19: contraction True | delta <= 4.330E-42 | q <= 1.276E-5 | dist <= 4.330E-42 | H_a in ['-2.582311E-9', '-2.582300E-9'] | H_xx in ['6.240409E-10', '6.240510E-10'] | H_a<0<H_xx True
+a_R box 1e-35: contraction True | delta <= 4.330E-42 | q <= 5.214E-10 | dist <= 4.330E-42 | H_a in ['-2.582306E-9', '-2.582305E-9'] | H_xx in ['6.240459E-10', '6.240460E-10'] | H_a<0<H_xx True
+0.3 s
+a_L centre: 1.34898938954386827787681537963939827088611390
+x_L centre: 13.8291866557289150324619070133126673295792476
+M_L = [[84581545, 0], [1071950683, 277806306]]
+a_L box 1e-30: contraction True | delta <= 3.321E-44 | q <= 5.276E-9 | dist <= 3.321E-44 | H_a in ['1.182291E-8', '1.182292E-8'] | H_xx in ['3.599630E-9', '3.599631E-9'] | H_a>0, H_xx>0 True
+1.3 s
+a_c+1e-4: signs ['+', '-', '+'] values ['[1.0315e-12 +/- 1.50e-17]', '[-2.5816e-13 +/- 1.13e-18]', '[7.1886e-13 +/- 3.79e-19]']
+a_c-1e-4: zero near 14.83689350624747 + 0.02874615852733666 i ; Rouche r=1e-13: True
+0.5 s
+eta( 1t)eta(23t)  level  23  a = 1.567747  multiplicative up to 3000: True
+eta( 2t)eta(22t)  level  44  a = 1.198948  multiplicative up to 3000: True
+eta( 3t)eta(21t)  level  63  a = 0.972955  multiplicative up to 3000: True
+eta( 4t)eta(20t)  level  80  a = 0.804719  multiplicative up to 3000: True
+eta( 5t)eta(19t)  level  95  a = 0.667501  multiplicative up to 3000: False
+eta( 6t)eta(18t)  level 108  a = 0.549306  multiplicative up to 3000: True
+eta( 7t)eta(17t)  level 119  a = 0.443652  multiplicative up to 3000: False
+eta( 8t)eta(16t)  level 128  a = 0.346574  multiplicative up to 3000: True
+eta( 9t)eta(15t)  level 135  a = 0.255413  multiplicative up to 3000: False
+eta(10t)eta(14t)  level 140  a = 0.168236  multiplicative up to 3000: False
+eta(11t)eta(13t)  level 143  a = 0.083527  multiplicative up to 3000: False
+eta(12t)eta(12t)  level 144  a = 0.000000  multiplicative up to 3000: True
+eta(6t)eta(18t): Gauss criterion checked for 428 primes 5 <= p <= 3000; mismatches: []
+A= 1: 2H(a,-1.5i) = 0.393136146753  lattice(K=4000) = 3.931361467534e-01  rel. diff = 6.1e-15
+A= 2: 2H(a,-1.5i) = 0.957989968549  lattice(K=4000) = 9.579899685487e-01  rel. diff = 5.0e-15
+A= 3: 2H(a,-1.5i) = 1.47139333047  lattice(K=4000) = 1.471393330473e+00  rel. diff = 4.2e-15
+A= 4: 2H(a,-1.5i) = 1.92579458409  lattice(K=4000) = 1.925794584092e+00  rel. diff = 4.3e-15
+A= 6: 2H(a,-1.5i) = 2.66537184232  lattice(K=4000) = 2.665371842319e+00  rel. diff = 4.5e-15
+A= 8: 2H(a,-1.5i) = 3.18871667173  lattice(K=4000) = 3.188716671727e+00  rel. diff = 4.2e-15
+A=12: 2H(a,-1.5i) = 3.60526644653  lattice(K=4000) = 3.605266446532e+00  rel. diff = 3.7e-15
+gamma = 2.82161410923512167788607608967: H(a0, gamma -/+ 1e-25) signs +- -> zero within 1e-25: True
+gamma = 4.54012115448883134462155601253: H(a0, gamma -/+ 1e-25) signs -+ -> zero within 1e-25: True
+gamma = 6.14349374284521055741894837740: H(a0, gamma -/+ 1e-25) signs +- -> zero within 1e-25: True
+gamma = 7.20655230074699554971488628053: H(a0, gamma -/+ 1e-25) signs -+ -> zero within 1e-25: True
+gamma = 8.645382261510086690609111542994: H(a0, gamma -/+ 1e-25) signs +- -> zero within 1e-25: True
+gamma = 9.764363290770792093036581350306: H(a0, gamma -/+ 1e-25) signs -+ -> zero within 1e-25: True
+gamma = 10.66337417717924861137567235324: H(a0, gamma -/+ 1e-25) signs +- -> zero within 1e-25: True
+gamma = 12.11393391520275622911136162744: H(a0, gamma -/+ 1e-25) signs -+ -> zero within 1e-25: True
+gamma = 12.81147910151262800003561171965: H(a0, gamma -/+ 1e-25) signs +- -> zero within 1e-25: True
+gamma = 13.92836271074950410633497392280: H(a0, gamma -/+ 1e-25) signs -+ -> zero within 1e-25: True
+0.3 s
+scan: 701 values of a in [0, 1.75], x step 0.001 on (0, 20): 9547 real-zero points, 154 defect points
+float64 vs Arb at 21 points (a in {0.3, 1, 1.5}, 10 <= x <= 20): max abs error 1.0e-17
+defect points per excursion: {'A': 41, 'B': 39, 'C': 33, 'D': 23, 'E': 11, 'F': 6, 'G': 1} | unassigned: 0
+excursion A: a in [1.3495, 1.4515], Re z 13.83 -> 14.83, max Im z 0.426
+excursion B: a in [1.2170, 1.3130], Re z 12.08 -> 12.79, max Im z 0.309
+excursion C: a in [1.4740, 1.5550], Re z 15.75 -> 16.67, max Im z 0.377
+excursion D: a in [0.1505, 0.2080], Re z 18.46 -> 18.53, max Im z 0.135
+excursion E: a in [0.5110, 0.5380], Re z 19.07 -> 19.17, max Im z 0.081
+excursion F: a in [0.7260, 0.7395], Re z 18.77 -> 18.84, max Im z 0.047
+excursion G: a in [1.0255, 1.0895], Re z 19.96 -> 20.46, max Im z 0.261
+9.0 s

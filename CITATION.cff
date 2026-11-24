@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Certified Edge Zeros in a Dedekind Eta Scale Family: code, notebooks and results"
+type: software
+authors:
+  - family-names: "Kotan"
+    given-names: "Kurban"
+    orcid: "https://orcid.org/0000-0002-6660-0565"
+    affiliation: "Department of Artificial Intelligence and Machine Learning, Faculty of Computer and Information Sciences, Manisa Celal Bayar University"
+repository-code: "https://github.com/kurbankotan/eta-zero-collisions"
+license: MIT
+version: "1.0.0"
+keywords:
+  - Dedekind eta function
+  - Artin L-function
+  - Epstein zeta function
+  - double zero
+  - interval arithmetic
+  - AI-assisted mathematics

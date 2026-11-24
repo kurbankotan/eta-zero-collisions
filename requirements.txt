@@ -1,2 +1,9 @@
+# Archived certificates (replay_certificates.py, check_certificate.py, Kubik_L_arastirmasi.ipynb)
 mpmath==1.3.0
 plotly==6.9.0
+
+# Reproduction notebook (eta_edge_zeros_reproduce.ipynb); tested with python-flint 0.9.0,
+# NumPy 2.4.6 and 2.5.5, Matplotlib 3.10.0 and 3.11.2
+python-flint>=0.7
+numpy>=1.24
+matplotlib>=3.7
